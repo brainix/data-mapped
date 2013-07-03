@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = DataMapped::VERSION
   spec.authors       = ["Raj Shah"]
   spec.email         = ["brainix@gmail.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
+  spec.description   = %q{Helpful mixins for DataMapper}
+  spec.summary       = %q{Helpful mixins for DataMapper}
   spec.homepage      = ""
   spec.license       = "MIT"
 
