@@ -71,8 +71,9 @@ property, as it expects for your class to define a composite primary key using
 This mixin prevents resources of your class from being destroyed (at least in
 the typical fashion using
 [`#destroy`](http://rubydoc.info/github/datamapper/dm-core/master/DataMapper/Resource#destroy-instance_method)).
-It's meant to be used in conjunction with either the normal model or the join
-model mixin (above).
+It's meant to be used in conjunction with either the
+[normal model](#normal-model) or the
+[join model](#join-model-for-a-join-table) mixin.
 
 	require 'data_mapped/model'
 	require 'data_mapped/permanent'
@@ -90,8 +91,8 @@ model mixin (above).
 This mixin duct tapes your class together with
 [Sunspot](http://sunspot.github.io/) and
 [Solr](https://lucene.apache.org/solr/), and makes your class's resources
-indexed and searchable.  It's meant to be used in conjunction with the normal
-model mixin (above).
+indexed and searchable.  It's meant to be used in conjunction with the
+[normal model](#normal-model) mixin.
 
 	require 'data_mapped/join'
 	require 'data_mapped/model'
