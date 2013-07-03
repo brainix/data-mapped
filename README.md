@@ -41,9 +41,9 @@ TODO: Write usage instructions here
 
 ### Permanent Model (that Can't be Destroyed)
 
-This mixin prevents resources of your class from being destroyed (in the
-typical fashion, using `#destroy`).  It's meant to be used in conjunction with
-either the normal model or the join model mixin (above).
+This mixin prevents resources of your class from being destroyed (at least in
+the typical fashion using `#destroy`).  It's meant to be used in conjunction
+with either the normal model or the join model mixin (above).
 
 TODO: Write usage instructions here
 
