@@ -40,7 +40,6 @@ properties to each of your models.
 		include DataMapped::Model
 		property :title, String, required: true
 		property :description, Text
-		has n, :actors, through: Resource
     end
 
 ### Join Model (for a Join Table)
