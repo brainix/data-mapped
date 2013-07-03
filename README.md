@@ -40,8 +40,8 @@ This mixin sets up your class for DataMapper, and adds `id`, `created_at`, and
 
 This mixin sets up your class for DataMapper, and adds `created_at` and
 `updated_at` properties that behave as expected.  This join model differs from
-the normal model (above) in that the join model doesn't add an `id` property,
-as it expects for your class to define a composite primary key using
+the [normal model](#normal-model) in that the join model doesn't add an `id`
+property, as it expects for your class to define a composite primary key using
 `belongs_to` properties.
 
 	require 'data_mapped/join'
