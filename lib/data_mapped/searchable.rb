@@ -1,3 +1,11 @@
+#-----------------------------------------------------------------------------#
+#   searchable.rb                                                             #
+#                                                                             #
+#   Copyright (c) 2013, Rajiv Bakulesh Shah.                                  #
+#-----------------------------------------------------------------------------#
+
+
+
 require 'active_support/all'
 require 'data_mapper'
 require 'sunspot'

@@ -6,7 +6,7 @@ require 'data_mapped/version'
 Gem::Specification.new do |spec|
   spec.name          = "data_mapped"
   spec.version       = DataMapped::VERSION
-  spec.authors       = ["Raj Shah"]
+  spec.authors       = ["Rajiv Bakulesh Shah"]
   spec.email         = ["brainix@gmail.com"]
   spec.description   = %q{Mixins for DataMapper}
   spec.summary       = %q{Mixins for DataMapper}
