@@ -109,8 +109,9 @@ and updated, but never deleted.
 	end
 
 *Integration note*: You can still delete permanent models with
-`resource.destroy!`.  In general, make a practice out of staying away from
-DataMapper's unsafe bang (!) methods.  These
+[`#destroy!`](http://rubydoc.info/github/datamapper/dm-core/master/DataMapper/Resource#destroy%21-instance_method).
+In general, make a practice out of staying away from DataMapper's unsafe bang
+(!) methods.  These
 [bang methods don't run validators or callbacks](http://datamapper.org/docs/create_and_destroy.html).
 :-(
 
