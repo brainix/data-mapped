@@ -1,6 +1,6 @@
 # DataMapped
 
-TODO: Write a gem description
+Ruby mixins for [DataMapper](http://datamapper.org/).
 
 ## Installation
 
