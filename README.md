@@ -31,7 +31,7 @@ This mixin sets up your class for DataMapper, and adds `id`, `created_at`, and
     
     class Movie
 		include DataMapped::Model
-		property :title, String, required: true, unique: true, unique_index: true
+		property :title, String, required: true
 		property :description, Text
 		has n, :actors, through: Resource
     end
@@ -49,14 +49,14 @@ as it expects for your class to define a composite primary key using
     
 	class Movie
 		include DataMapped::Model
-		property :title, String, required: true, unique: true, unique_index: true
+		property :title, String, required: true
 		property :description, Text
 		has n, :actors, through: Resource
 	end
     
 	class Actor
 		include DataMapped::Model
-		property :name, String, required: true, unique: true, unique_index: true
+		property :name, String, required: true
 		has n, :movies, through: Resource
 	end
     
@@ -80,7 +80,7 @@ model mixin (above).
 	class Movie
 		include DataMapped::Model
 		include DataMapped::Permanent
-		property :title, String, required: true, unique: true, unique_index: true
+		property :title, String, required: true
 		property :description, Text
 		has n, :actors, through: Resource
 	end
@@ -99,7 +99,7 @@ model mixin (above).
 	class Movie
 		include DataMapped::Model
 		include DataMapped::Searchable
-		property :title, String, required: true, unique: true, unique_index: true
+		property :title, String, required: true
 		property :description, Text
 		has n, :actors, through: Resource
 		
@@ -114,7 +114,7 @@ model mixin (above).
 	
 	class Actor
 		include DataMapped::Model
-		property :name, String, required: true, unique: true, unique_index: true
+		property :name, String, required: true
 		has n, :movies, through: Resource
 	end
 
