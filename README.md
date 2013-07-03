@@ -52,7 +52,8 @@ TODO: Write usage instructions here
 This mixin duct tapes your class together with
 [Sunspot](http://sunspot.github.io/) and
 [Solr](https://lucene.apache.org/solr/), and makes your class's resources
-indexed and searchable.
+indexed and searchable.  It's meant to be used in conjunction with the normal
+model mixin (above).
 
 TODO: Write usage instructions here
 
