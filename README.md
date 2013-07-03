@@ -27,7 +27,13 @@ Or install it yourself as:
 This mixin sets up your class for DataMapper, and adds `id`, `created_at`, and
 `updated_at` properties that behave as expected.
 
-TODO: Write usage instructions here
+    require 'data_mapped/model'
+    
+    class Movie
+		include DataMapped::Model
+		property :title, String, required: true, unique: true, unique_index: true
+		has n, :actors, through: Resource
+    end
 
 ### Join Model (for a Join Table)
 
