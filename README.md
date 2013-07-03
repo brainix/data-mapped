@@ -43,7 +43,26 @@ the normal model (above) in that the join model doesn't add an `id` property,
 as it expects for your class to define a composite primary key using
 `belongs_to` properties.
 
-TODO: Write usage instructions here
+	require 'data_mapped/join'
+	require 'data_mapped/model'
+    
+	class Movie
+		include DataMapped::Model
+		property :title, String, required: true, unique: true, unique_index: true
+		has n, :actors, through: Resource
+	end
+    
+	class Actor
+		include DataMapped::Model
+		property :name, String, required: true, unique: true, unique_index: true
+		has n, :movies, through: Resource
+	end
+    
+	class ActorMovie
+		include DataMapped::Join
+		belongs_to :actor, key: true
+		belongs_to :movie, key: true
+	end
 
 ### Permanent Model (that Can't be Destroyed)
 
