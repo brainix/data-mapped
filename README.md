@@ -72,7 +72,15 @@ the typical fashion using
 It's meant to be used in conjunction with either the normal model or the join
 model mixin (above).
 
-TODO: Write usage instructions here
+	require 'data_mapped/model'
+	require 'data_mapped/permanent'
+	
+	class Movie
+		include DataMapped::Model
+		include DataMapped::Permanent
+		property :title, String, required: true, unique: true, unique_index: true
+		has n, :actors, through: Resource
+	end
 
 ### Searchable Model
 
