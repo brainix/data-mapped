@@ -2,6 +2,8 @@
 
 Ruby mixins for [DataMapper](http://datamapper.org/).
 
+
+
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -16,9 +18,27 @@ Or install it yourself as:
 
     $ gem install data_mapped
 
+
+
 ## Usage
 
+### Normal Model
+
 TODO: Write usage instructions here
+
+### Join Model (for a Join Table)
+
+TODO: Write usage instructions here
+
+### Permanent Model (that Can't be Deleted)
+
+TODO: Write usage instructions here
+
+### Searchable Model
+
+TODO: Write usage instructions here
+
+
 
 ## Contributing
 
