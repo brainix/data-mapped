@@ -94,8 +94,8 @@ This mixin duct tapes your class together with
 indexed and searchable.  It's meant to be used in conjunction with the
 [normal model](#normal-model) mixin.
 
-	require 'data_mapped/join'
 	require 'data_mapped/model'
+	require 'data_mapped/searchable'
 	
 	class Movie
 		include DataMapped::Model
