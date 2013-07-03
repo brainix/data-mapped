@@ -1,5 +1,7 @@
 require 'data_mapper'
 
+
+
 module DataMapped
   module Model
 
