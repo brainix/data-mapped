@@ -42,8 +42,10 @@ TODO: Write usage instructions here
 ### Permanent Model (that Can't be Destroyed)
 
 This mixin prevents resources of your class from being destroyed (at least in
-the typical fashion using `#destroy`).  It's meant to be used in conjunction
-with either the normal model or the join model mixin (above).
+the typical fashion using
+[`#destroy`](http://rubydoc.info/github/datamapper/dm-core/master/DataMapper/Resource#destroy-instance_method)).
+It's meant to be used in conjunction with either the normal model or the join
+model mixin (above).
 
 TODO: Write usage instructions here
 
