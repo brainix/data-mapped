@@ -104,7 +104,6 @@ and updated, but never deleted.
 		include DataMapped::Permanent
 		property :title, String, required: true
 		property :description, Text
-		has n, :actors, through: Resource
 	end
 
 **Integration note**: You can still delete permanent models with
