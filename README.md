@@ -28,8 +28,8 @@ Or install it yourself as:
 
 ### Normal Model
 
-This mixin sets up your class for DataMapper, and adds `id`, `created_at`, and
-`updated_at` properties that behave as expected.
+This mixin sets up your class for DataMapper, and adds `@id`, `@created_at`,
+and `@updated_at` properties that behave as expected.
 
 **Rationale**: Don't repeat yourself.  Don't manually add the same standard
 properties to each of your models.
@@ -44,11 +44,11 @@ properties to each of your models.
 
 ### Join Model (for a Join Table)
 
-This mixin sets up your class for DataMapper, and adds `created_at` and
-`updated_at` properties that behave as expected.  This join model differs from
-the [normal model](#normal-model) in that the join model doesn't add an `id`
-property, as it expects for your class to define a composite primary key using
-`belongs_to` properties.
+This mixin sets up your class for DataMapper, and adds `@created_at` and
+`@updated_at` properties that behave as expected.  This join model differs
+from the [normal model](#normal-model) in that the join model doesn't add an
+`@id` property, as it expects for your class to define a composite primary key
+using `#belongs_to` relationships.
 
 **Rationale**: Tightly control your many-to-many associations.  This is a
 helpful pattern to do something to a movie resource any time an actor is
