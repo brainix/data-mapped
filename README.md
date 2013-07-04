@@ -31,7 +31,7 @@ Or install it yourself as:
 This mixin sets up your class for DataMapper, and adds `id`, `created_at`, and
 `updated_at` properties that behave as expected.
 
-*Rationale*: Don't repeat yourself.  Don't manually add the same standard
+**Rationale**: Don't repeat yourself.  Don't manually add the same standard
 properties to each of your models.
 
     require 'data_mapped/model'
@@ -50,7 +50,7 @@ the [normal model](#normal-model) in that the join model doesn't add an `id`
 property, as it expects for your class to define a composite primary key using
 `belongs_to` properties.
 
-*Rationale*: Tightly control your many-to-many associations.  This is a
+**Rationale**: Tightly control your many-to-many associations.  This is a
 helpful pattern to do something to a movie resource any time an actor is
 associated with it.
 
@@ -76,7 +76,7 @@ associated with it.
 		belongs_to :movie, key: true
 	end
 
-*Integration note*: Your join model class name must be a
+**Integration note**: Your join model class name must be a
 [Pascal case](http://c2.com/cgi/wiki?PascalCase), alphabetized concatenation
 of the names of the two models that you're joining.  Internally, DataMapper
 introspects your join model class name and uses it to determine the name of
@@ -91,7 +91,7 @@ It's meant to be used in conjunction with either the
 [normal model](#normal-model) or the
 [join model](#join-model-for-a-join-table) mixin.
 
-*Rationale*: Prevent accidentally deleting resources that shouldn't be
+**Rationale**: Prevent accidentally deleting resources that shouldn't be
 deleted, if you have itchy fingers and play around too much in `irb` on
 production like I do.  Our use case is that movies should be created, read,
 and updated, but never deleted.
@@ -107,7 +107,7 @@ and updated, but never deleted.
 		has n, :actors, through: Resource
 	end
 
-*Integration note*: You can still delete permanent models with
+**Integration note**: You can still delete permanent models with
 [`#destroy!`](http://rubydoc.info/github/datamapper/dm-core/master/DataMapper/Resource#destroy%21-instance_method).
 In general, make a practice out of staying away from DataMapper's unsafe bang
 (!) methods.  These
@@ -122,7 +122,7 @@ This mixin duct tapes your class together with
 indexed and searchable.  It's meant to be used in conjunction with the
 [normal model](#normal-model) mixin.
 
-*Rationale*: Everyone loves full-text search, and this makes it easy to get
+**Rationale**: Everyone loves full-text search, and this makes it easy to get
 DataMapper to talk to Sunspot.  Include this mixin, define your model, then
 use
 [Sunspot's powerful DSL](http://sunspot.github.io/docs/index.html#Indexing_In_Depth)
