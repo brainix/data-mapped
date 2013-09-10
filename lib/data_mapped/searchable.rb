@@ -33,7 +33,11 @@ module DataMapped
     end
 
     def self.included(other)
-      other.class_eval { alias_method(:new_record?, :new?) }
+      other.class_eval do
+        alias_method(:new_record?, :new?)
+        after :save, :reindex
+        after :destroy, :reindex
+      end
       other.extend Sunspot::Rails::Searchable::ActsAsMethods
       Sunspot::Adapters::DataAccessor.register(DataAccessor, other)
       Sunspot::Adapters::InstanceAdapter.register(InstanceAdapter, other)

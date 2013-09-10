@@ -23,9 +23,7 @@ module DataMapped
     DataMapper::Model.append_inclusions(InstanceMethods)
 
     def self.included(other)
-      other.class_eval do
-        before :destroy, :vomit_before_destruction
-      end
+      other.class_eval { before :destroy, :vomit_before_destruction }
     end
 
   end
