@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["brainix@gmail.com"]
   spec.description   = %q{Mixins for DataMapper}
   spec.summary       = %q{Mixins for DataMapper}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/brainix/data_mapped"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
